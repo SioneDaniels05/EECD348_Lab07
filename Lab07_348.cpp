@@ -9,9 +9,9 @@ public:
 	// 1. Read values from stdin into a matrix
 	void readFromStdin() {
 		int x;
+		cout << "Data for the matrix: ";
 		for (int i = 0; i < SIZE; i++) {
 			for (int j = 0; j < SIZE; j++) {
-				cout << "Data for the matrix: ";
 				cin >> x;
 				data[i][j] = x;
 			}
@@ -78,7 +78,6 @@ public:
 
 };
 int main() {
-	// Example usage:
 	Matrix mat1;
 	cout << "Enter values for Matrix 1:" << endl;
 	mat1.readFromStdin();
