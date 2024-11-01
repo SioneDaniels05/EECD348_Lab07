@@ -55,8 +55,8 @@ public:
 	int sumOfDiagonals() const {
 		int x = 0;
 		for (int i = 0; i < SIZE; i++) {
-			x = (data[i][i] + x);
-			}
+			x = (data[i][i] + data[i][SIZE - 1 - i] + x);
+		}
 		return x;
 	}
 
